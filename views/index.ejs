@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MANKAR COLLEGE ATTENDENCE CHECKER</title>
+    <link rel="stylesheet" href="atten.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        /* outline: none; */
+        /* border: none; */
+        text-transform: capitalize;
+        transition: all 0.2s linear;
+        font-family: 'Poppins', sans-serif;
+        scroll-behavior: smooth;
+    }
+    
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .head {
+        margin: 15px;
+    }
+    
+    .head h2 {
+        font-size: 65px;
+        letter-spacing: 8px;
+        padding-bottom: 10px;
+    }
+    
+    .head h5 {
+        padding-left: 95px;
+        font-size: 10px;
+    }
+    
+    .content {
+        /* padding-top: 60px; */
+        margin: 30px;
+    }
+    
+    .content h4 {
+        padding-bottom: 25px;
+    }
+    
+    form .input-box {
+        padding-bottom: 45px;
+    }
+    
+    .input-box label {
+        margin: 10px;
+    }
+    
+    form input {
+        width: 100%;
+        display: block;
+        padding: 10px 10px;
+        border: 3px solid #666;
+        font-weight: bolder;
+        border-radius: 8px;
+        outline: none;
+        cursor: pointer;
+    }
+    
+    form .input-box select {
+        width: 100%;
+        display: block;
+        border: 2px solid #666;
+        border-radius: 8px;
+        padding: 10px 10px;
+        font-weight: bolder;
+        outline: none;
+        color: #666;
+        cursor: pointer;
+    }
+    
+    form button {
+        width: 100%;
+        text-align: center;
+        padding: 10px 10px;
+        border: 2px solid #666;
+        border-radius: 8px;
+        background-color: #666;
+        color: #fff;
+        font-weight: bolder;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <main>
+        <div class="head">
+            <h2>লহড়ী</h2>
+            <h5>--@compsc_2022</h5>
+        </div>
+
+        <div class="content">
+            <h4>PLEASE FILL THE BELOW MENTIONED DETAILS</h4>
+            <form method="post" action="/">
+                <div class="input-box">
+                    <label>NAME<small>*</small></label>
+                    <input type="text" name="fname">
+                </div>
+                <div class="input-box">
+                    <label>DEPARTMENT <small>*</small></label>
+                    <select name="department" id="department">
+                    <option value="--CHOOSE YOUR DEOPARTMENT--" selected >
+                    </option>
+                    <option value="compsc">COMPUTER SCIENCE</option>
+                    <option value="phys">PHYSICS</option>
+                    <option value="chem">CHEMISTRY</option>
+                    <option value="math">MATH</option>
+                    <option value="bang">BANGLA</option>
+                    <option value="eng">ENGLISH</option>
+                    <option value="polsc">POLITICAL SCIENCE</option>
+                    <option value="santa">SANTALI</option>
+                    <option value="sanskrit">SANSKRIT</option>
+                    <option value="others">GUEST</option>
+                </select>
+                </div>
+                <div class="input-box">
+                    <label>SEMESTER <small>*</small></label>
+                    <select name="semestr" id="sems">
+                        <option value="--CHOOSE YOUR SEMESTER--" selected >
+                        </option>
+                        <option value="1">1 SEMESTER</option>
+                        <option value="2">2 SEMESTER</option>
+                        <option value="3">3 SEMESTER</option>
+                        <option value="4">4 XSEMESTER</option>
+                        <option value="5">5 SEMESTER</option>
+                        <option value="6">6 SEMESTER</option>
+                        <option value="pass-out">PASS-OUT</option>
+                   
+                    </select>
+                </div>
+                <button id="submit">SUBMIT</button>
+
+            </form>
+
+
+        </div>
+    </main>
+</body>
+
+</html>
